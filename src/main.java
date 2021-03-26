@@ -19,10 +19,20 @@ class MyServer
     }
 
     /////////////////////////
-    public static void main(String [] args)
+    public static void main(String [] args) throws IOException
     {
         System.out.println("Hello Java");
         // MyServer ms = new MyServer();
+		
+		// creating list of process
+        List<String> list = new ArrayList<String>();
+        list.add("notepad.exe");
+ 
+        // create the process
+        ProcessBuilder build = new ProcessBuilder(list);
+ 
+        // checking the command i list
+        System.out.println("command: " + build.command());
     }
 /////////////////////////
 }
