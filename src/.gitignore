@@ -1,0 +1,3 @@
+/main.java # file
+# .idea/ # folder
+*.class # RE files
